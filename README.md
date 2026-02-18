@@ -82,7 +82,7 @@ const CONFIG = {
 Este projeto está publicado online através do GitHub Pages.
 Você pode acessar o chat entrevistador técnico diretamente pelo link abaixo:
 
-👉 Abrir o Chat no GitHub Pages
+👉 Chat: https://gilbertomarques.github.io/estrutura-vaga-tech/
 
 ## ⚠️ Observação importante
 
