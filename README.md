@@ -56,3 +56,38 @@ Esse resumo pode ser usado diretamente como:
 - Segurança garantida: tokens e credenciais ocultos via `.gitignore`.  
 
 ---
+
+## ⚙️ Como rodar localmente
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/GilbertoMarques/estrutura-vaga-tech.git
+
+2. Crie o arquivo config.js com seu token Hugging Face:
+const CONFIG = {
+  HF_TOKEN: "hf_SEU_TOKEN_REAL_AQUI"
+};
+
+3. Abra o index.html no navegador.
+
+4. Responda às perguntas do chat e confirme para gerar o resumo.
+
+## 🔒 Segurança
+
+- O arquivo config.js com o token real não é versionado (graças ao .gitignore).
+
+- O repositório contém apenas config.example.js como guia de configuração.
+
+## 🌐 Acesso via GitHub Pages
+
+Este projeto está publicado online através do GitHub Pages.
+Você pode acessar o chat entrevistador técnico diretamente pelo link abaixo:
+
+👉 Abrir o Chat no GitHub Pages
+
+## ⚠️ Observação importante
+
+- O arquivo config.js com o token real da Hugging Face não é publicado por questões de segurança.
+
+- No GitHub Pages, o chat funciona com o resumo local (fallback).
+
+- Para usar a IA e gerar resumos automáticos, é necessário rodar o projeto localmente com o config.js configurado.
