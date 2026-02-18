@@ -1,0 +1,23 @@
+# Ignorar arquivo de configuração com token
+config.js
+
+# Ignorar variáveis de ambiente (se usar .env)
+.env
+
+# Ignorar dependências locais (caso use Node.js)
+node_modules/
+
+# Ignorar arquivos temporários do sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar logs
+*.log
+
+# Ignorar arquivos de build (se futuramente usar bundlers)
+dist/
+build/
+
+# Ignorar cache do editor
+.vscode/
+.idea/

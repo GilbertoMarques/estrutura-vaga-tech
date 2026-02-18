@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Estruturação de Vaga em Tecnologia</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Estruturação de Vaga em Tecnologia</h1>
+    <p class="description">Este agente tem como objetivo documentar e organizar a estrutura de vagas de tecnologia, servindo como guia para entrevistas técnicas, definição de requisitos e publicação de descrições de cargos.</p>
+
+    <!-- Widget de chat integrado (substituído por interface JS) -->
+    <div class="chat-card" id="chat-card">
+      <div id="chat-messages" class="chat-messages"></div>
+      <form id="chat-form" class="chat-form">
+        <input type="text" id="chat-input" autocomplete="off" placeholder="Digite sua pergunta..." />
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+
+    <!-- bust cache by adding version parameter, using relative path to parent -->
+    <script src="../chat.js?v=1.0.4"></script>
+    <script src="../config.js" onerror="console.warn('config.js não encontrado; crie com sua chave.');"></script>
+  </div>
+</body>
+</html>
