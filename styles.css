@@ -1,15 +1,57 @@
-/* result card for atlas suggestions */
-.result-card{ 
-  background:#334155; 
-  padding:16px 20px; 
-  border-radius:10px; 
-  margin:12px 0; 
+/* Estilo geral da página */
+body {
+  font-family: Arial, sans-serif;
+  background: #1e293b;
+  color: #f1f5f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container principal do chat */
+#chat-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #0f172a;
+  border-radius: 10px;
+  padding: 20px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
-.result-card h3{ margin:0 0 10px; font-size:1.2rem; }
-.result-card p, .result-card ul{ margin:6px 0; line-height:1.4; }
 
-/* efeito fade-in */
+/* Área de mensagens */
+#chat-messages {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+/* Mensagens do bot */
+.bot-message {
+  background: #334155;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin: 8px 0;
+}
+
+/* Mensagens do usuário */
+.user-message {
+  background: #2563eb;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin: 8px 0;
+  text-align: right;
+  color: #fff;
+}
+
+/* Card de resultado */
+.result-card {
+  background: #475569;
+  padding: 16px;
+  border-radius: 10px;
+  margin: 12px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* Efeito de fade-in */
 .fade-in {
   opacity: 0;
   transform: translateY(10px);
@@ -23,19 +65,68 @@
   }
 }
 
-/* ações pós plano */
-.plan-actions{ 
-  display:flex; 
-  gap:8px; 
-  margin-top:16px; 
-  flex-wrap:wrap; 
+/* Área de ações dentro do card */
+.plan-actions {
+  margin-top: 16px;
 }
-.plan-actions button{ 
-  padding:8px 14px; 
-  border:none; 
-  border-radius:6px; 
-  background: var(--accent); 
-  color:#fff; 
-  cursor:pointer; 
+
+.plan-actions button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #fff;
+  cursor: pointer;
 }
-.plan-actions button:hover{ opacity:0.9; }
+
+.plan-actions button:hover {
+  opacity: 0.9;
+}
+
+/* Estilização do formulário de entrada */
+#chat-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#chat-input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #334155;
+  color: #f1f5f9;
+  font-size: 14px;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+#chat-input::placeholder {
+  color: #94a3b8;
+}
+
+#chat-input:focus {
+  background: #475569;
+}
+
+/* Botão de envio */
+#chat-form button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#chat-form button:hover {
+  background: #1d4ed8;
+  transform: scale(1.05);
+}
+
+#chat-form button:active {
+  transform: scale(0.95);
+}

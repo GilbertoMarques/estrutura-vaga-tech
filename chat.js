@@ -95,6 +95,22 @@ async function gerarResumo() {
   // Tenta gerar com IA, se falhar usa versão local
   let resumoIA = await gerarResumoIA(respostas);
 
+  if (resumoIA.includes("Erro") || resumoIA.includes("Não foi possível")) {
+    resumoIA = `
+📌 Resumo da Vaga
+- Título e Propósito: ${respostas[0]}
+- Senioridade: ${respostas[1]}
+- Stack Técnico: ${respostas[2]}
+- Soft Skills: ${respostas[3]}
+
+Análise Final:
+A vaga busca um perfil alinhado ao título informado, com senioridade adequada ao nível de responsabilidade descrito. 
+O stack técnico evidencia as competências essenciais para execução das atividades, enquanto as soft skills destacam 
+comportamentos que garantem integração com usuários e equipes. 
+O conjunto demonstra um profissional capaz de atuar de forma eficiente, colaborativa e em evolução contínua.
+    `;
+  }
+
   resumoCard.innerHTML = `
     <h3>📌 Resumo da Vaga</h3>
     <p>${resumoIA}</p>
